@@ -1,0 +1,183 @@
+body {
+  background: linear-gradient(to right, #F8FAFC, #D9EAFD);
+  margin: 0;
+  padding: 0;
+}
+
+/* انیمیشن ورود */
+.main {
+  width: 100%;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideup 1s ease-out forwards;
+}
+
+@keyframes slideup {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* نوار بالا */
+.navbar {
+  background: transparent;
+  display: flex;
+  gap: 50px;
+  position: relative;
+  margin-top: 30px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  transition: all 0.5s ease;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.navbar li a:hover {
+  background-color: #9AA6B2;
+  color: #F8FAFC;
+  border-radius: 3px;
+}
+
+.logo {
+  position: absolute;
+  right: 10px;
+  top: -35px;
+  width: 100px;
+  height: auto;
+}
+
+/* متن و هدر */
+.header {
+  margin-top: 200px;
+  margin-left: 100px;
+  font-family: sans-serif;
+  font-size: 40px;
+  color: #9AA6B2;
+}
+
+.p {
+  margin-left: 100px;
+  margin-top: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.info {
+  width: 500px;
+  height: auto;
+}
+
+/* عکس */
+.img1 {
+  width: 800px;
+  height: auto;
+  margin-left: 700px;
+  margin-top: -450px;
+  transition: all 0.5s ease;
+}
+
+.img1:hover {
+  transform: scale(1.05);
+}
+
+/* دکمه */
+.btn {
+  margin-left: 100px;
+  margin-top: -500px;
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 25px;
+  background: #9AA6B2;
+  color: #F8FAFC;
+  cursor: pointer;
+  transition: 1s ease;
+  font-size: 16px;
+}
+
+.btn:hover {
+  box-shadow: 0px 8px 10px #60686f;
+}
+
+/* ----------- رسپانسیو ----------- */
+
+/* تبلت */
+@media (max-width: 992px) {
+  .header {
+    margin: 100px 20px 0;
+    font-size: 32px;
+  }
+
+  .info {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .p {
+    margin: 0 20px;
+  }
+
+  .img1 {
+    width: 500px;
+    margin: 40px auto 0;
+    display: block;
+    position: static;
+  }
+
+  .btn {
+    margin: 30px auto;
+    display: block;
+  }
+}
+
+/* موبایل */
+@media (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .logo {
+    position: static;
+    margin: 10px auto;
+    display: block;
+  }
+
+  .header {
+    text-align: center;
+    margin: 50px 0 10px;
+    font-size: 24px;
+  }
+
+  .p {
+    text-align: center;
+    margin: 0 10px;
+    font-size: 14px;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .img1 {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .btn {
+    width: 80%;
+    max-width: 250px;
+    margin: 20px auto;
+  }
+}
