@@ -4,9 +4,9 @@ body {
   padding: 0;
 }
 
-.anjam midam{
-  margin-left:300px
-  border:5px solid orange
+.anjam-midam{
+  margin-left:300px;
+  border:5px solid orange;
 }
 
 .main {
@@ -185,4 +185,5 @@ body {
     margin: 20px auto;
   }
 }
+
 
