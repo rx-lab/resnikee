@@ -1,0 +1,7 @@
+h1{
+    margin: auto auto auto auto;
+    color: orange;
+    border: black;
+    border-radius: 10px;
+    
+}
